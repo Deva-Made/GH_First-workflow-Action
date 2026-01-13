@@ -18,7 +18,6 @@ jobs:
 
     steps:
       - name: Greetings
-        run: echo "Name: ${{ inputs.name }}"
-
-      - name: Age
-        run: echo "Age: ${{ inputs.age }}"
+        run: 
+        echo "Name: ${{ inputs.name }}"
+        echo "Age: ${{ inputs.age }}"
