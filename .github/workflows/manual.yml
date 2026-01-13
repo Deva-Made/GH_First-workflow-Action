@@ -2,12 +2,12 @@ name: Hello world
 
 on:
   workflow_dispatch:
-  inputs:
-  name:
-    Description: 'Name'
-    type: string
-    default: Test
-  
+    inputs:
+      name:
+        description: 'Name'
+        type: string
+        default: Test
+
 jobs:
   demo:
     runs-on: ubuntu-latest
