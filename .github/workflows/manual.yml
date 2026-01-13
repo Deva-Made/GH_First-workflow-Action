@@ -7,10 +7,10 @@ on:
         description: 'Name'
         type: string
         default: 'Test'
-        age:
-          description: 'Age'
-          type: number
-          required: true
+      age:
+        description: 'Age'
+        type: number
+        required: true
 
 jobs:
   demo:
@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Greetings
-        run: echo "${{ input.name }}"
+        run: echo "Name: ${{ inputs.name }}"
 
-     - name: Age
-       run: echo "${{ input.age }}"
+      - name: Age
+        run: echo "Age: ${{ inputs.age }}"
